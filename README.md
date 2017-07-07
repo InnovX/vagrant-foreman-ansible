@@ -2,11 +2,10 @@
 
 [![Jexia](http://jexia.com/images/top-logo.png)](http://jexia.com)
 
-To get started, perform a git clone on. Make sure you have [Vagrant installed](https://docs.vagrantup.com/v2/installation/), [VirtualBox](https://www.virtualbox.org/wiki/Downloads) or [LibVirt](https://libvirt.org/), and as automation [Ansible](https://www.ansible.com/) .
+To get started, perform a git clone on this repository. Make sure you have [Vagrant installed](https://docs.vagrantup.com/v2/installation/), [VirtualBox](https://www.virtualbox.org/wiki/Downloads) or [LibVirt](https://libvirt.org/), and [Ansible](https://www.ansible.com/) for automation.
 
 Repository will install for you Foreman 1.15.+ with PuppetMaster and PuppetDB 4.+ version .
-* **Before Start Please make sure that you have in /etc/hosts file 192.168.33.10 as foreman.jexia.com**
-To run this do`
+* **Before starting please make sure that you have the IP address 192.168.33.10 configured as foreman.jexia.com. You can run the following to get this done:**
 ```
 sudo echo '192.168.33.10 foreman.jexia.com' >> /etc/hosts
 ```
@@ -31,7 +30,7 @@ vagrant up --provider virtualbox
 or
 vagrant up --provider libvirt
 ```
-Above vm will automatically install Puppet and connect to Foreman.
+Above VM will automatically install Puppet and connect to Foreman.
 
 ## If you want to login into Vagrant VM run:
 ```
@@ -46,4 +45,4 @@ vagrant destroy -f
 ```
 vagrant provision
 ```
-`This installation is for Testing purposes we are not responsible for any Production Environment.`
+`This Repository is going to help you get comfortable with this test environment where you can learn how Foreman works and how to install it`.
