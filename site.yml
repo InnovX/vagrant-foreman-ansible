@@ -17,8 +17,8 @@
    - name: foreman repos centos7 install
      yum: name=http://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm state=present
 
-   - name: foreman 1.15 repos release centos7 install
-     yum: name=http://yum.theforeman.org/releases/1.15/el7/x86_64/foreman-release.rpm state=present
+   - name: foreman 1.16 repos release centos7 install
+     yum: name=http://yum.theforeman.org/releases/1.16/el7/x86_64/foreman-release.rpm state=present
 
    - name: service firewalld start
      service: name=firewalld state=started
