@@ -1,11 +1,11 @@
 ---
- - hosts: kalinux.local.vag
+ - hosts: smg-cms.local.vag
    become: true
 
    tasks:
-   - hostname: name=kalinux.local.vag
+   - hostname: name=sng-cms.local.vag
 
-   - lineinfile: dest=/etc/hosts line="192.168.33.11 kalinux.local.vag" state=present
+   - lineinfile: dest=/etc/hosts line="192.168.33.11 smg-cms.local.vag" state=present
    - lineinfile: dest=/etc/hosts line="192.168.33.10 foreman.local.vag" state=present
 
 #####Puppet Agent######
