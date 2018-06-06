@@ -1,13 +1,12 @@
 # Vagrant-Foreman-Ansible
 
-[![Jexia](http://jexia.com/images/top-logo.png)](http://jexia.com)
 
 To get started, perform a git clone on this repository. Make sure you have [Vagrant installed](https://docs.vagrantup.com/v2/installation/), [VirtualBox](https://www.virtualbox.org/wiki/Downloads) or [LibVirt](https://libvirt.org/), and [Ansible](https://www.ansible.com/) for automation.
 
 Repository will install for you Foreman 1.15.+ with PuppetMaster and PuppetDB 4.+ version .
-* **Before starting please make sure that you have the IP address 192.168.33.10 configured as foreman.jexia.com. You can run the following to get this done:**
+* **Before starting please make sure that you have the IP address 192.168.33.10 configured as foreman.local.vag. You can run the following to get this done:**
 ```
-sudo echo '192.168.33.10 foreman.jexia.com' >> /etc/hosts
+sudo echo '192.168.33.10 foreman.local.vag' >> /etc/hosts
 ```
 Start with Git Clone
 ```
@@ -21,7 +20,7 @@ vagrant up --provider libvirt
 Once vagrant is done provisioning the VMs run `vagrant status` to confirm all instances are running:
 
 ```
-Visit the web UI by browsing to https://foreman.jexia.com
+Visit the web UI by browsing to https://foreman.local.vag
 ```
 ## If you want to add another vm to Foreman please do:
 ```
