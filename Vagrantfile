@@ -7,8 +7,8 @@ Vagrant.configure(2) do |config|
     ansible.playbook = "site.yml"
   end
 
-  config.vm.define "foreman.jexia.com" do |node|
-    node.vm.hostname = "foreman.jexia.com"
+  config.vm.define "foreman.local.vag" do |node|
+    node.vm.hostname = "foreman.local.vag"
     node.vm.network "private_network", ip: "192.168.33.10"
     config.vm.provider "virtualbox" do |v|
       v.memory = 6192

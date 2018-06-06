@@ -1,12 +1,12 @@
 ---
- - hosts: kalinux.jexia.com
+ - hosts: kalinux.local.vag
    become: true
 
    tasks:
-   - hostname: name=kalinux.jexia.com
+   - hostname: name=kalinux.local.vag
 
-   - lineinfile: dest=/etc/hosts line="192.168.33.11 kalinux.jexia.com" state=present
-   - lineinfile: dest=/etc/hosts line="192.168.33.10 foreman.jexia.com" state=present
+   - lineinfile: dest=/etc/hosts line="192.168.33.11 kalinux.local.vag" state=present
+   - lineinfile: dest=/etc/hosts line="192.168.33.10 foreman.local.vag" state=present
 
 #####Puppet Agent######
    - name: Install PuppetLabs release RPM for Fedora or EL derivatives
