@@ -3,14 +3,14 @@
 
 To get started, perform a git clone on this repository. Make sure you have [Vagrant installed](https://docs.vagrantup.com/v2/installation/), [VirtualBox](https://www.virtualbox.org/wiki/Downloads) or [LibVirt](https://libvirt.org/), and [Ansible](https://www.ansible.com/) for automation.
 
-Repository will install for you Foreman 1.15.+ with PuppetMaster and PuppetDB 4.+ version .
+Repository will install for you Foreman 1.17.+ with PuppetMaster and PuppetDB 4.+ version .
 * **Before starting please make sure that you have the IP address 192.168.33.10 configured as foreman.local.vag. You can run the following to get this done:**
 ```
 sudo echo '192.168.33.10 foreman.local.vag' >> /etc/hosts
 ```
 Start with Git Clone
 ```
-git clone https://github.com/jexia-com/vagrant-foreman-ansible.git
+git clone https://git@github.com:InnovX/vagrant-foreman-ansible.git
 cd vagrant-foreman-ansible
 vagrant up --provider virtualbox
 or
